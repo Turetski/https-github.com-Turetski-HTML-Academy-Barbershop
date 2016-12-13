@@ -1,1 +1,1 @@
-# https-github.com-Turetski-HTML-Academy-Barbershop
+# HTML-Academy-Barbershop
