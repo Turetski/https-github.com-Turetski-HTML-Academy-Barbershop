@@ -79,6 +79,12 @@
   margin-bottom: 80px;
 }
 
+.main-footer{
+  margin-top: 79px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
 .footer-contacts {
   float: left;
   width: 320px;
