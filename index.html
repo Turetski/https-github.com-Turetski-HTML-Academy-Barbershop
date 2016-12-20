@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Borodinski</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -68,20 +70,21 @@
             </li>
             <li>
               <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель
-                множества титулов и наград пополнил наши ряды</p>
+                множества титулов и наград пополнил наши стройные ряды</p>
                 <time datetime="2016-09-19">19 сентября</time>
-                <a class="btn" href="#">Все новости</a>
             </li>
+            <a class="btn" href="#">Все новости</a>
           </ul>
         </section>
         <section class="index-content-right">
           <h2 class="index-content-title">ГАЛЕРЕЯ</h2>
           <div class="gallery">
             <figure class ="gallery-content">
-              <img src="img/gallery.png" width="286" height="164" alt="Галерея">
+              <img src="images/gallery-chairs.jpg" width="286" height="164" alt="Галерея">
             </figure>
-            <button class="btn gallery-prev">Назад</button>
+            <button class="btn gallery-prev" disabled>Назад</button>
             <button class="btn gallery-next">Вперед</button>
+
           </div>
         </section>
       </div>
@@ -108,6 +111,7 @@
              <input type="text" name="time" value="" placeholder="Время">
              <input type="text" name="name" value="" placeholder="Имя">
              <input type="tel" name="phone" value="" placeholder="Телефон">
+             <button class="btn" type="submit">Записаться</button>
           </form>
         </div>
       </div>
