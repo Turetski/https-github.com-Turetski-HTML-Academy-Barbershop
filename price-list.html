@@ -4,26 +4,24 @@
     <meta charset="utf-8">
     <title>Borodinski</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/price-list.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-nav">
+          <a class="logo-inner" href="index.html">
+              <img src="images/nav-logo.png" width="111" height="24" alt="ГЛАВНАЯ">
+          </a>
           <ul>
-            <li>
-              <a class="main logo" href="index.html">
-                <img src="images/nav-logo.png" width="111" height="24" alt="ГЛАВНАЯ">
-              </a>
-            </li>
             <li>
               <a href="#">ИНФОРМАЦИЯ</a>
             </li>
             <li>
               <a href="#">НОВОСТИ</a>
             </li>
-            <li>
-              <a class="selected" href="#">ПРАЙС-ЛИСТ</a>
+            <li class="selected">
+              <span>ПРАЙС-ЛИСТ</span>
             </li>
             <li>
               <a href="shop.html">МАГАЗИН</a>
@@ -40,60 +38,60 @@
     </header>
     <main>
       <div class="container">
-        <h1 class="title">Прайс-лист</h1>
-        <div class="bread-crumbs">
-          <a class="crumb" href="#">Главная</a>
-          <div class="crumb">Прайс-лист</div>
+        <h1 class="inner-title">Прайс-лист</h1>
+        <ul class="breadcrumbs">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="lastcrumb">Прайс-лист</li>
+        </ul>
+        <div class="inner-content">
+          <div class="inner-columns clearfix">
+            <div class="big-header">
+              <h2>Истинно мужская классика</h2>
+            </div>
+            <div class="inner-columns-left">
+              <h2>Мы используем только<br>лучшие средства</h2>
+              <ul class="custom-list-1">
+                <li>Baxter of California</li>
+                <li>Mr. Natty</li>
+                <li>Suavecito</li>
+                <li>Malin+Goetz</li>
+              </ul>
+            </div>
+            <div class="inner-columns-right">
+              <h2>Цены на услуги <br> наших мастеров</h2>
+              <table class="price-table">
+                <tr>
+                  <td>Стрижка</td>
+                  <td>1500 Р.</td>
+                </tr>
+                <tr>
+                  <td>Стрижка бороды</td>
+                  <td>500 Р.</td>
+                </tr>
+                <tr>
+                  <td>Накрутка усов</td>
+                  <td>350 Р.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="inner-columns clearfix">
+            <h2>Несколько слов о нас</h2>
+            <div class="inner-columns-left">
+              <p class="short-text">Наша парикмахерская занимается исключительно мужскими стрижками.
+              Стрижка каждого клиента для нас - это уникальная и продуманная до
+              мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+            </div>
+            <div class="inner-columns-right">
+              <p class="short-text">Наша мастерская расположена в центре города, поэтому сделать стильную
+              стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете
+              погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и
+              свободно!<p>
+            </div>
+          </div>
         </div>
-        <section class="price clearfix">
-          <div class="mens-classic">
-            Истинно мужская классика
-          </div>
-          <div class="price-features">
-            <p>Мы используем только<br>лучшие средства</p>
-            <ul>
-              <li>Baxter of California</li>
-              <li>Mr. Natty</li>
-              <li>Suavecito</li>
-              <li>Malin+Goetz</li>
-            </ul>
-          </div>
-          <div class="price-list">
-            <p>Цены на услуги<br>наших мастеров</p>
-            <div class="price-list-item">
-              Стрижка
-            </div>
-            <div class="price-list-item">
-              1500 Р.
-            </div>
-            <div class="price-list-item">
-              Стрижка бороды
-            </div>
-            <div class="price-list-item">
-              500 Р.
-            </div>
-            <div class="price-list-item">
-              Накрутка усов
-            </div>
-            <div class="price-list-item">
-              350 Р.
-            </div>
-          </div>
-        </section>
-        <section class="description clearfix">
-          <h2 class="description-title">Несколько слов о нас</h2>
-          <div class="description-item">
-            Наша парикмахерская занимается исключительно мужскими стрижками.
-            Стрижка каждого клиента для нас - это уникальная и продуманная до
-            мелочей работа. Мы не работаем на количество, мы делаем качество.
-          </div>
-          <div class="description-item">
-            Наша мастерская расположена в центре города, поэтому сделать стильную
-            стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете
-            погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и
-            свободно!
-          </div>
-        </section>
       </div>
     </main>
     <footer class="main-footer">
