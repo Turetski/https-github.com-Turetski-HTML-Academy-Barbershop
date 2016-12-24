@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <title>Borodinski</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/shop-item.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-nav">
+          <a class="logo-inner" href="index.html">
+              <img src="images/nav-logo.png" width="111" height="24" alt="ГЛАВНАЯ">
+          </a>
           <ul>
-            <li>
-              <a href="index.html">ГЛАВНАЯ</a>
-            </li>
             <li>
               <a href="#">ИНФОРМАЦИЯ</a>
             </li>
@@ -23,8 +23,8 @@
             <li>
               <a  href="price-list.html">ПРАЙС-ЛИСТ</a>
             </li>
-            <li>
-              <a class="selected" href="shop.html">МАГАЗИН</a>
+            <li class="selected">
+              <a href="shop.html">МАГАЗИН</a>
             </li>
             <li>
               <a href="#">КОНТАКТЫ</a>
@@ -38,13 +38,13 @@
     </header>
     <main>
       <div  class="container">
-        <h1 class="main-title">Набор для путешествий "Baxter of California"</h1>
-        <div class="bread-crumbs">
-          <a class="crumb" href="index.html">Главная</a>
-          <a class="crumb" href="shop.html">Магазин</a>
-          <a class="crumb" href="#">Средства для ухода</a>
-          <div class="crumb">Набор для путешествий "Baxter of California"</div>
-        </div>
+        <h1 class="inner-title">Набор для путешествий "Baxter of California"</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a class="crumb" href="shop.html">Магазин</a></li>
+          <li><a class="crumb" href="#">Средства для ухода</a></li>
+          <li class="lastcrumb">Набор для путешествий "Baxter of California"</li>
+        </ul>
         <section class="product clearfix">
           <div class="product-gallery">
             <figure class="product-gallery-content">
