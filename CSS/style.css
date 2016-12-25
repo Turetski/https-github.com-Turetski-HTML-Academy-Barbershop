@@ -503,7 +503,8 @@ body {
   border-bottom: 2px solid #000;
 }
 
-.custom-list-1 {
+.custom-list-1,
+.custom-list-2 {
   margin: 14px 0;
   padding: 0;
   list-style: none;
@@ -515,7 +516,14 @@ body {
   padding-left: 20px;
 }
 
-.custom-list-1 li::before {
+.custom-list-2 li{
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.custom-list-1 li::before,
+.custom-list-2 li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -569,30 +577,24 @@ body {
   padding-right: 80px;
 }
 
-.product-gallery {
-  float: left;
-  width: 480px;
-}
-
 .product-gallery-content {
     padding: 0;
     margin: 0;
     font-size: 0;
 }
 
-.product {
-  margin-bottom: 36px;
-}
-
-.product-presentation {
-  float: right;
-  width: 400px;
+.product-gallery-content img {
+  box-shadow: 0 0 7px 7px rgba(220,220,220,0.3);
 }
 
 .product-gallery-content img:nth-child(1){
   margin-bottom: 21px;
+  width: 460px;
+  height: 499px;
 }
 .product-gallery-content img:not(:nth-child(1)){
+  width: 140px;
+  height: 149px;
   margin-right: 20px;
   display: inline-block;
   vertical-align: top;
@@ -603,15 +605,19 @@ body {
 }
 
 .availability{
+  display: block;
   float: left;
 }
 
 .article {
+  display: block;
   float: right;
+  color: #aeaeae;
 }
 
 .product-presentation {
-  padding-left: 10px;
+  padding-left: 70px;
+  width: 390px;
 }
 
 .product-presentation-header {
@@ -619,15 +625,8 @@ body {
   margin-bottom: 33px;
 }
 
-.product-presentation-description {
+.product-presentation .description {
   margin-bottom: 38px;
-}
-
-.product-presentation-price {
-  width: 109px;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 14px;
 }
 
 .btn-buy {
@@ -804,7 +803,8 @@ body {
 }
 
 
-.showcase-item-footer .btn {
+.showcase-item-footer .btn,
+.product-presentation-price-buy .btn{
   display: inline-block;;
   vertical-align: top;
 
@@ -812,9 +812,12 @@ body {
   padding: 10px  0;
   width: 76px;
   text-align: center;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-.showcase-item-footer span {
+.showcase-item-footer span,
+.product-presentation-price-buy span {
   display: inline-block;
   vertical-align: top;
   margin: 0;
@@ -822,6 +825,8 @@ body {
   width: 109px;
   background-color: #e5e5e5;
   text-align: center;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .showcase-nav{
@@ -881,6 +886,7 @@ body {
 .modal-content {
   display: none;
   position: absolute;
+  z-index: 2;
   left:50%;
   top: 120px;
 
@@ -1074,4 +1080,16 @@ body {
 .modal-map-close:hover::after,
 .modal-map-close:hover::before {
   background: #fff;
+}
+
+@keyframes bounce {
+  0%    {transform: translateY(-2000px);}
+  70%   {transform: translateY(30px);}
+  90%   {transform: translateY(-10px);}
+  100%  {transform: translateY(0);}
+}
+
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
 }
